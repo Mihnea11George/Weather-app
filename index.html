@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vremea - Glassmorphism</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-wrapper">
+       
+        <div class="search-glass">
+            <input type="text" id="city-input" placeholder="IAȘI, ROMÂNIA" autocomplete="off">
+            <button id="search-btn">
+                <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 5.29 14.71l5 5a1 1 0 0 1-1.42 1.42l-5-5A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12A6 6 0 0 0 10 4z"/></svg>
+            </button>
+        </div>
+
+
+        <div class="weather-glass-card">
+            <div class="card-header">
+                <h2 id="city-name">VREME ÎN IAȘI</h2>
+                <p>ACUM</p>
+            </div>
+
+            <div class="current-weather">
+                <div class="main-icon">
+                    <img id="w-icon" src="https://openweathermap.org/img/wn/02d@4x.png" alt="Vreme">
+                </div>
+                <div class="temp-wrapper">
+                    <h1 id="temperature">18</h1><span class="celsius">°C</span>
+                </div>
+                <div class="short-desc">
+                    <p id="description" class="capitalize">Ploaie slabă</p>
+                </div>
+            </div>
+
+          
+            <div class="details-section">
+                <h3>DETALII ACUM</h3>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="label">💧 Umiditate</span>
+                        <strong id="humidity">72%</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">🌬️ Vânt</span>
+                        <strong id="wind">12 km/h</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">⏲️ Presiune</span>
+                        <strong id="pressure">1016 hPa</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">🌡️ Resimțită</span>
+                        <strong id="feels-like">17°C</strong>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="forecast-section">
+                <h3>PROGNOZĂ 5 ZILE</h3>
+                <div class="forecast-container" id="forecast-container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
