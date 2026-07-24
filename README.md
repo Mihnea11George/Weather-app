@@ -15,12 +15,3 @@ O aplicație web modernă care afișează starea vremii în timp real și progno
 * **JavaScript (Vanilla)** - Logica și comunicarea cu serverul
 * **[OpenWeatherMap API](https://openweathermap.org/)** - Sursa de date REST API (vreme curentă și prognoză)
 
-## 🚀 Cum să rulezi proiectul local
-
-Dacă vrei să descarci și să rulezi acest proiect pe calculatorul tău, urmează acești pași:
-
-1. **Clonează sau descarcă** acest repository.
-2. Creează un cont gratuit pe [OpenWeatherMap](https://openweathermap.org/) și generează o cheie API.
-3. Deschide fișierul `script.js` (sau `app.js`) și înlocuiește variabila `apiKey` cu cheia ta:
-   ```javascript
-   const apiKey = 'CHEIA_TA_API_AICI';
